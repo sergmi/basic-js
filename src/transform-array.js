@@ -1,4 +1,5 @@
 module.exports = function transform(arr) {
+	if(!arr[0]){return [];}
     if(Object.prototype.toString.call(arr).slice(8,-1) !== "Array"){throw "Error"; return;}
    	arr.forEach(function(y,j,m){
 		switch(y) {
