@@ -1,5 +1,5 @@
 module.exports = function getSeason(date) {
-	if(!date){throw "Unable to determine the time of year!"; return;}
+	if(!date){return "Unable to determine the time of year!";}
 	else if(Date.prototype.toString.call(date) === "Invalid Date"){throw "Invalid date"; return;}
 	
 	if(/Sep|Oct|Nov/.test(date) === true){return "autumn";}
